@@ -1,5 +1,5 @@
 <?php
-class Loader{
+class splitoneLoader{
      private $pluginDir;
      
      public function __construct($pluginDir){

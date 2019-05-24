@@ -12,11 +12,11 @@ Version: 1.0.0
 Author URI:
 */
 
-require_once("Loader.php");
+require_once("splitoneLoader.php");
 
 add_shortcode( 'splitone', 'split_the_page' );
 
 function split_the_page( $atts ){
-	$loader = new Loader(plugin_dir_path(__DIR__));
+	$loader = new splitoneLoader(plugin_dir_path(__DIR__));
      return $loader->executeShortcode($atts);
 }
